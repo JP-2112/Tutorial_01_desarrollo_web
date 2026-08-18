@@ -1,7 +1,7 @@
 import './assets/css/input.css'; 
 
 import { createApp } from 'vue';
-import { createPinia } from 'pinia';
+import PiniaConfig from './PiniaConfig.js';
 
 // @ts-ignore: allow importing Vue single file component without type declarations
 import App from './App.vue';
@@ -9,7 +9,7 @@ import router from './router';
 
 const app = createApp(App);
 
-app.use(createPinia());
+app.use(PiniaConfig.init());
 app.use(router);
 
 app.mount('#app');
