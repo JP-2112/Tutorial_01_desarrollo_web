@@ -1,6 +1,6 @@
-import { useBookStore } from '@/stores/bookstore.js';
+import { useBookStore } from '@/stores/bookStore';
 import type { BookInterface } from '@/interfaces/BookInterface';
-import type { CreateBookDTO } from '@/dtos/CreateBookDTO.js';
+import type { CreateBookDTO } from '@/dtos/CreateBookDTO';
 
 export class BookService {
   static getBooks(): BookInterface[] {
@@ -22,5 +22,4 @@ export class BookService {
       store.books.pop();
     }
   }
-
 }

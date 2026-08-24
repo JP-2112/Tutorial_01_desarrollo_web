@@ -1,9 +1,8 @@
-import './assets/css/input.css'; 
+import './assets/css/input.css';
 
 import { createApp } from 'vue';
-import PiniaConfig from './PiniaConfig.js';
+import PiniaConfig from './PiniaConfig';
 
-// @ts-ignore: allow importing Vue single file component without type declarations
 import App from './App.vue';
 import router from './router';
 
