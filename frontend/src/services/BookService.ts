@@ -8,7 +8,7 @@ import axios from 'axios';
 
 export class BookService { 
 
-  private static readonly API_URL = 'http://localhost:3000/api/books'; 
+  private static readonly API_URL =  `${import.meta.env.VITE_API_BASE_URL}/api/books`;
 
  
 
